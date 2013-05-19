@@ -1,0 +1,55 @@
+[[sample_contribution]]
+== Test in Layers 
+
+In developing a complex application there are many layers of tests we
+can use. We write Unit tests, Functional tests, Acceptance Tests,
+Performance Tests, Statistical Tests and more. It is important to understand where to use
+each form of test and how they interact with each other. 
+
+I like to think of tests like an Onion where things are arranged from
+the inside out. Unit tests are the innermost tests, they are closest
+to the code, fastest to run and hopefully the most revealing of
+problems. Unit tests will test the actual functions of the code
+base. Ideally a unit test suite should run very fast, under 10 seconds
+or so. 
+
+Next out come Functional Tests, which test the product from the point
+of view of the API. They work on the basis of when I make this request
+I should get this kind of response back. These tend to be written as a
+client for the product. 
+
+After that come Acceptance tests. These often use something like
+Cucumber or the like (TODO: Expand)
+
+Next we have performance tests....
+
+
+Statistical tests are used to understand how our system develops over
+time...
+
+Manual User Tests...
+
+The important thing is that all of these forms of tests should work
+together to build a great product. Each will reveal a different type
+of problem with your code base. 
+
+I also like to move tests in, when I find a problem in the functional
+test I try to create a unit test to show the same problem, then fix
+it in both places. 
+
+
+
+
+
+
+.About the Author
+[NOTE]
+****
+Name:: 
+   Zachary Kessin
+Biography:: 
+	    
+Image::
+   
+****
+
